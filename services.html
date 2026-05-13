@@ -3,24 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | Amanah Business Advisory</title>
+
+  <title>Services | Amanah Consulting</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo-no-background.png" />
+  <link rel="apple-touch-icon" href="assets/logo-no-background.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 <header class="navbar">
-  <a href="index.html" class="brand">
-    <img src="assets/logo.png" alt="Amanah Business Advisory logo" class="nav-logo" />
+  <a href="index.html" class="brand" aria-label="Amanah Consulting home">
+    <img src="assets/logo.jpeg" alt="Amanah Consulting logo" class="nav-logo" />
+
     <div class="brand-text">
-      <span>Amanah Business Advisory</span>
-      <small>Business Development & Operations Advisory</small>
+      <span>Amanah Consulting</span>
+      <small>Business Development & Operations Consulting</small>
     </div>
   </a>
 
   <nav>
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
+    <a href="services.html" class="active">Services</a>
     <a href="who-we-help.html">Who We Help</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
@@ -31,7 +35,9 @@
 
   <section class="page-hero">
     <p class="eyebrow">Services</p>
-    <h1>Advisory services designed for practical execution.</h1>
+
+    <h1>Consulting services designed for practical execution.</h1>
+
     <p>
       Focused support for businesses that need clearer structure, stronger documentation,
       better preparation, and a more professional approach to opportunities.
@@ -39,13 +45,15 @@
   </section>
 
   <section class="section white">
-    <div class="service-block">
+
+    <div class="service-block" id="business-development">
       <span class="card-number">01</span>
       <h2>Business Development & Tender Support</h2>
       <p>
         Support with identifying opportunities, organising tender requirements, preparing bid documents,
         and improving proposal readiness.
       </p>
+
       <ul class="check-list">
         <li>Tender and opportunity tracking</li>
         <li>Vendor registration support</li>
@@ -55,13 +63,14 @@
       </ul>
     </div>
 
-    <div class="service-block">
+    <div class="service-block" id="commercial-structuring">
       <span class="card-number">02</span>
       <h2>Contract & Commercial Structuring</h2>
       <p>
         Practical support in thinking through pricing, payment terms, responsibilities, risks,
         and commercial logic before entering agreements.
       </p>
+
       <ul class="check-list">
         <li>Pricing and payment structure</li>
         <li>Cost and margin logic</li>
@@ -71,13 +80,14 @@
       </ul>
     </div>
 
-    <div class="service-block">
+    <div class="service-block" id="operations-systems">
       <span class="card-number">03</span>
       <h2>Operations & Project Coordination Systems</h2>
       <p>
         Simple internal systems that help businesses coordinate projects, track tasks, manage documents,
         and improve day-to-day execution.
       </p>
+
       <ul class="check-list">
         <li>Project trackers and dashboards</li>
         <li>SOPs and checklists</li>
@@ -87,13 +97,14 @@
       </ul>
     </div>
 
-    <div class="service-block">
+    <div class="service-block" id="research">
       <span class="card-number">04</span>
       <h2>Market, Partner & Client Research</h2>
       <p>
         Structured research to help businesses understand markets, identify potential partners,
         assess competitors, and prepare for outreach.
       </p>
+
       <ul class="check-list">
         <li>Market research briefs</li>
         <li>Partner and client mapping</li>
@@ -103,54 +114,65 @@
       </ul>
     </div>
 
+  </section>
 
-<section class="section pricing">
-  <p class="section-label">Pricing</p>
-  <h2>Pricing depends on scope, complexity, and the level of support required.</h2>
-  <p>
-    Each project is different. Pricing is based on the type of support needed, the size of the business,
-    the amount of research or preparation required, and the expected deliverables.
-  </p>
+  <section class="section pricing">
+    <p class="section-label">Pricing</p>
 
-  <div class="cards three">
-    <article class="card">
-      <h3>Small advisory tasks</h3>
-      <p>
-        Suitable for focused support such as document review, proposal structure, market scans,
-        or simple operational templates.
-      </p>
-    </article>
+    <h2>Pricing depends on scope, complexity, and the level of support required.</h2>
 
-    <article class="card">
-      <h3>Project-based support</h3>
-      <p>
-        Suitable for tender preparation, business planning, market research, commercial structuring,
-        or operations setup.
-      </p>
-    </article>
+    <p>
+      Each project is different. Pricing is based on the type of support needed, the size of the business,
+      the amount of research or preparation required, the expected deliverables, and the timeline.
+    </p>
 
-    <article class="card">
-      <h3>Ongoing support</h3>
-      <p>
-        Suitable for businesses that need continuous business development, operations, research,
-        or coordination support over time.
-      </p>
-    </article>
-  </div>
+    <div class="cards three">
+      <article class="card">
+        <h3>Small consulting tasks</h3>
+        <p>
+          Suitable for focused support such as document review, proposal structure,
+          market scans, or simple operational templates.
+        </p>
+      </article>
 
-  <p class="pricing-note">
-    For pricing, please contact us with a short description of what you need. A tailored quote can then be provided based on scope and timeline.
-  </p>
-</section>
+      <article class="card">
+        <h3>Project-based support</h3>
+        <p>
+          Suitable for tender preparation, business planning, market research,
+          commercial structuring, or operations setup.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Ongoing support</h3>
+        <p>
+          Suitable for businesses that need continuous business development,
+          operations, research, or coordination support over time.
+        </p>
+      </article>
+    </div>
+
+    <p class="pricing-note">
+      For pricing, please contact us with a short description of what you need. A tailored quote can then be provided based on scope, complexity, and timeline.
+    </p>
+  </section>
 
 </main>
 
 <footer>
   <div>
-    <strong>Amanah Business Advisory</strong>
-    <span>Business development and operations advisory for project-based companies.</span>
+    <strong>Amanah Consulting</strong>
+    <span>Business development and operations consulting for project-based companies.</span>
   </div>
-  <p>© 2026 Amanah Business Advisory. All rights reserved.</p>
+
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Disclaimer</a>
+    <a href="contact.html">Contact</a>
+    <a href="https://www.linkedin.com/in/abas-mohamed-03a76428b" target="_blank">LinkedIn</a>
+  </div>
+
+  <p>© 2026 Amanah Consulting. All rights reserved.</p>
 </footer>
 
 </body>
