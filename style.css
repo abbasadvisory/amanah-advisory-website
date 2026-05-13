@@ -89,8 +89,10 @@ nav a:hover {
   background:
     linear-gradient(90deg, rgba(7, 20, 42, 0.94) 0%, rgba(7, 20, 42, 0.86) 45%, rgba(7, 20, 42, 0.55) 100%),
     url("assets/background.png");
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #07142a;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -136,8 +138,10 @@ nav a:hover {
   background:
     linear-gradient(90deg, rgba(7, 20, 42, 0.95), rgba(7, 20, 42, 0.86)),
     url("assets/background.png");
-  background-size: cover;
+  background-size: 100% auto;
   background-position: center;
+  background-repeat: no-repeat;
+  background-color: #07142a;
   color: white;
 }
 
