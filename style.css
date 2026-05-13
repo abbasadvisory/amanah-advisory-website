@@ -39,19 +39,6 @@ body {
   border-bottom: 1px solid rgba(205, 158, 70, 0.18);
 }
 
-.nav-logo {
-  width: 74px;
-  height: 74px;
-  object-fit: contain;
-  display: block;
-  flex-shrink: 0;
-  border-radius: 0;
-  background: #06101f;
-  padding: 0;
-  box-shadow: none;
-  filter: none;
-}
-
 .brand {
   display: flex;
   align-items: center;
@@ -75,7 +62,11 @@ body {
   object-fit: contain;
   display: block;
   flex-shrink: 0;
-
+  border-radius: 0;
+  background: #06101f;
+  padding: 0;
+  box-shadow: none;
+  filter: none;
 }
 
 .brand-text span {
@@ -138,8 +129,8 @@ nav a.active::after {
   background:
     linear-gradient(90deg, rgba(5, 13, 27, 0.18) 0%, rgba(5, 13, 27, 0.28) 42%, rgba(5, 13, 27, 0.14) 100%),
     url("assets/background.png");
-  background-size: cover;
-  background-position: center;
+  background-size: 100% auto;
+  background-position: center top;
   background-repeat: no-repeat;
   color: #ffffff;
   display: flex;
@@ -152,27 +143,18 @@ nav a.active::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(5, 13, 27, 0.06), rgba(5, 13, 27, 0.30));
+  background: linear-gradient(180deg, rgba(5, 13, 27, 0.04), rgba(5, 13, 27, 0.24));
   pointer-events: none;
 }
 
 .home-hero-content {
   position: relative;
   z-index: 2;
-  max-width: 720px;
+  max-width: 760px;
 }
 
 .clean-hero-content {
-  margin-top: 80px;
-}
-
-.home-kicker {
-  color: #d6b46c;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.24em;
-  font-weight: 800;
-  margin-bottom: 50px;
+  margin-top: 60px;
 }
 
 .home-tagline {
@@ -181,7 +163,7 @@ nav a.active::after {
   text-transform: uppercase;
   letter-spacing: 0.22em;
   line-height: 1.7;
-  margin-bottom: 42px;
+  margin-bottom: 58px;
 }
 
 .home-description {
@@ -193,6 +175,10 @@ nav a.active::after {
   font-weight: 500;
 }
 
+.moved-down-description {
+  margin-top: 120px;
+}
+
 /* HERO BUTTON */
 
 .hero-outline-btn {
@@ -202,7 +188,7 @@ nav a.active::after {
   padding: 16px 28px;
   border: 1px solid #d6b46c;
   color: #d6b46c;
-  background: rgba(5, 13, 27, 0.28);
+  background: rgba(5, 13, 27, 0.3);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.14em;
@@ -237,6 +223,10 @@ nav a.active::after {
 
 .hero-button-lower {
   margin-top: 48px;
+}
+
+.extra-lower-button {
+  margin-top: 70px;
 }
 
 /* STANDARD HERO FOR OTHER PAGES */
@@ -409,6 +399,41 @@ nav a.active::after {
   margin-bottom: 0;
 }
 
+/* SERVICE BLOCKS */
+
+.service-block {
+  padding: 42px 0;
+  border-bottom: 1px solid #ded5c5;
+  scroll-margin-top: 120px;
+}
+
+.service-block:last-child {
+  border-bottom: none;
+}
+
+.service-block h2 {
+  margin-bottom: 12px;
+}
+
+.check-list {
+  list-style: none;
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.check-list li {
+  color: #374151;
+  font-weight: 600;
+}
+
+.check-list li::before {
+  content: "✓";
+  color: #b88735;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
 /* CTA */
 
 .dark-cta {
@@ -423,6 +448,180 @@ nav a.active::after {
 .dark-cta p {
   color: #e5e7eb;
   margin-bottom: 26px;
+}
+
+/* DELIVERABLE GRID */
+
+.deliverable-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.deliverable-grid div {
+  background: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(214, 180, 108, 0.35);
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+.deliverable-grid div:hover {
+  transform: translateY(-3px);
+  border-color: rgba(214, 180, 108, 0.65);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.light-grid div {
+  background: #f6f2e9;
+  color: #07142a;
+  border: 1px solid #ded5c5;
+}
+
+/* PRICING */
+
+.pricing {
+  background: #ffffff;
+}
+
+.pricing-note {
+  margin-top: 28px;
+  padding: 20px;
+  background: #f6f2e9;
+  border-left: 4px solid #b88735;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* CONTACT FORM */
+
+.contact-page {
+  min-height: 50vh;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.contact-card {
+  max-width: 760px;
+  padding: 40px;
+  background: #f6f2e9;
+  border: 1px solid #ded5c5;
+  border-radius: 16px;
+}
+
+.contact-form {
+  margin-top: 28px;
+  display: grid;
+  gap: 14px;
+}
+
+.contact-form label {
+  font-weight: 700;
+  color: #07142a;
+  font-size: 0.95rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d6cabb;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #ffffff;
+  color: #111827;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #b88735;
+  box-shadow: 0 0 0 3px rgba(184, 135, 53, 0.18);
+}
+
+.form-button {
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: fit-content;
+}
+
+.contact-info {
+  background: #07142a;
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 16px;
+}
+
+.contact-info h3 {
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+.contact-info p {
+  color: #d1d5db;
+  margin-bottom: 16px;
+}
+
+.contact-info ul {
+  margin-left: 18px;
+  margin-bottom: 24px;
+}
+
+.contact-info li {
+  margin-bottom: 8px;
+  color: #e5e7eb;
+}
+
+.info-box {
+  padding: 18px;
+  border: 1px solid rgba(214, 180, 108, 0.35);
+  border-radius: 12px;
+  margin-top: 16px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.info-box strong {
+  color: #d6b46c;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.text-link {
+  color: #d6b46c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* LEGAL TEXT */
+
+.legal-text h2 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 1.45rem;
+}
+
+.legal-text h2:first-child {
+  margin-top: 0;
 }
 
 /* FOOTER */
@@ -473,7 +672,8 @@ footer span {
 
 @media (max-width: 1000px) {
   .cards.three,
-  .cards.two {
+  .cards.two,
+  .deliverable-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -506,6 +706,14 @@ footer span {
     margin-top: 40px;
   }
 
+  .moved-down-description {
+    margin-top: 70px;
+  }
+
+  .extra-lower-button {
+    margin-top: 50px;
+  }
+
   .home-tagline {
     font-size: 0.85rem;
     letter-spacing: 0.16em;
@@ -525,7 +733,9 @@ footer span {
   }
 
   .cards.three,
-  .cards.two {
+  .cards.two,
+  .deliverable-grid,
+  .contact-layout {
     grid-template-columns: 1fr;
   }
 
@@ -540,5 +750,9 @@ footer span {
   .nav-logo {
     width: 56px;
     height: 56px;
+  }
+
+  .contact-card {
+    padding: 28px;
   }
 }
