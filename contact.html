@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Amanah Business Advisory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="brand">
+    <img src="assets/logo.png" alt="Amanah Business Advisory logo" class="nav-logo" />
+    <div class="brand-text">
+      <span>Amanah Business Advisory</span>
+      <small>Business Development & Operations Advisory</small>
+    </div>
+  </a>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="who-we-help.html">Who We Help</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow">Contact</p>
+    <h1>Let’s discuss how your business can become more structured and opportunity-ready.</h1>
+    <p>
+      Fill out the form below with a short description of what you need support with.
+      We will review your message and respond as soon as possible.
+    </p>
+  </section>
+
+  <section class="section white contact-page">
+    <div class="contact-layout">
+
+      <div class="contact-card">
+        <h2>Send an enquiry</h2>
+        <p>
+          Please include enough detail for us to understand the type of support you are looking for,
+          the size of your business or project, and the expected timeline.
+        </p>
+
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+          <input type="hidden" name="form-name" value="contact" />
+
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="company">Company / organisation</label>
+          <input type="text" id="company" name="company" />
+
+          <label for="service">Type of support needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select an option</option>
+            <option value="Business Development & Tender Support">Business Development & Tender Support</option>
+            <option value="Contract & Commercial Structuring">Contract & Commercial Structuring</option>
+            <option value="Operations & Project Coordination Systems">Operations & Project Coordination Systems</option>
+            <option value="Market, Partner & Client Research">Market, Partner & Client Research</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="message">Message / project description</label>
+          <textarea id="message" name="message" rows="7" required></textarea>
+
+          <button type="submit" class="btn primary form-button">Send enquiry</button>
+        </form>
+      </div>
+
+      <aside class="contact-info">
+        <h3>Before sending</h3>
+        <p>
+          Helpful details to include:
+        </p>
+        <ul>
+          <li>What your business or project does</li>
+          <li>What kind of support you need</li>
+          <li>Whether the work is urgent or exploratory</li>
+          <li>Any deadline or tender date</li>
+          <li>Whether you need one-time or ongoing support</li>
+        </ul>
+
+        <div class="info-box">
+          <strong>Pricing</strong>
+          <p>
+            Pricing depends on the type of support, the amount of work required, the complexity of the task,
+            and the size of the business or project. Please contact us for a tailored quote.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <strong>Direct contact</strong>
+          <p>
+            Email will be updated once the official advisory email is created.
+          </p>
+          <a href="https://www.linkedin.com/in/abas-mohamed-03a76428b" class="text-link">Connect on LinkedIn</a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div>
+    <strong>Amanah Business Advisory</strong>
+    <span>Business development and operations advisory for project-based companies.</span>
+  </div>
+
+  <div class="footer-links">
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+
+  <p>© 2026 Amanah Business Advisory. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
